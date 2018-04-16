@@ -1,0 +1,17 @@
+{
+  "name": "nodeapp-notes",
+  "version": "1.0.0",
+  "description": "Notes for a simple application that makes HTTP requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Karl Jensen",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "moment": "^2.22.0",
+    "request": "^2.85.0"
+  }
+}
