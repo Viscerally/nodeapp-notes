@@ -4,8 +4,10 @@ request({
   url: `https://api.github.com/users/jensen/repos`,
   qs: {
     sort: 'created',
-    direction: 'desc',
     access_token: process.env.GITHUB_TOKEN
+  },
+  headers: {
+    'user-agent': 'node application'
   }
 }, function(error, response, body) {
   var repos = JSON.parse(body);
