@@ -43,7 +43,7 @@ require('dotenv').config();
 const access_token = process.env.GITHUB_TOKEN;
 ```
 
-### using .gitignore
+### Using .gitignore
 
 Keeping code and configuration separate allows us to hide our configuration while still being able to share the source code. We use a `.gitignore` file to exclude certain files from our version control system.
 

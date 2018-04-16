@@ -30,7 +30,7 @@ function onRetrieveWeather(error, response, body) {
   var data = JSON.parse(body);
   var week = data.daily.data.slice(0, 7);
 
-  week.forEach(day => {
+  week.forEach(function(day) {
     var weather = getWeather(day);
     var date = weather.date.format('dddd, MMMM Do');
 
